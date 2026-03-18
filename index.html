@@ -245,21 +245,19 @@ footer .footer-buttons button:hover {
 </footer>
 
 <script>
-// ===================== VIDEO DOWNLOAD =====================
 function downloadVideo() {
     const url = document.getElementById("videoURL").value;
     if (!url) { alert("Please paste video link"); return; }
     document.getElementById("loader").style.display = "block";
-    const downloadLink = "/download?video=" + encodeURIComponent(url);
+    const downloadLink = "https://ssdownloader-production.up.railway.app/download?video=" + encodeURIComponent(url);
     window.location.href = downloadLink;
 }
 
-// ===================== MP3 DOWNLOAD =====================
 function downloadMP3() {
     const url = document.getElementById("videoURL").value;
     if (!url) { alert("Please paste video link"); return; }
     document.getElementById("loader").style.display = "block";
-    const downloadLink = "/mp3?video=" + encodeURIComponent(url);
+    const downloadLink = "https://ssdownloader-production.up.railway.app/mp3?video=" + encodeURIComponent(url);
     window.location.href = downloadLink;
 }
 
