@@ -201,8 +201,8 @@ footer .footer-buttons button:hover {
   <input type="text" id="videoURL" placeholder="Paste video link here">
 
   <div>
-    <button onclick="downloadVideo()">Download</button>
-    <button onclick="downloadMP3()">MP3</button>
+    <button onclick="downloadVideo()">Download Video</button>
+    <button onclick="downloadMP3()">Download MP3 (YouTube Only)</button>
   </div>
 
   <p id="loader">⏳ Downloading... Please wait</p>
@@ -248,6 +248,7 @@ footer .footer-buttons button:hover {
 </footer>
 
 <script>
+// ✅ Change this to your Railway backend URL or localhost
 const BACKEND_URL = "https://ssdownloader-production.up.railway.app";
 
 // ===================== VIDEO DOWNLOAD =====================
@@ -270,7 +271,7 @@ function downloadMP3() {
 
 // ===================== FOOTER BUTTON FUNCTIONS =====================
 function openAbout() {
-    alert("This site is for educational purpose. SSDownloader is a free video downloader for Facebook, Instagram, YouTube. You can download videos and convert to MP3 quickly.");
+    alert("This site is for educational purposes. SSDownloader is a free video downloader for Facebook, Instagram, YouTube. You can download videos and convert to MP3 quickly.");
 }
 
 function openTerms() {
