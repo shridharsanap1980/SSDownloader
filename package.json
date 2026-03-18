@@ -1,19 +1,16 @@
 {
   "name": "ssdownloader",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Video downloader for YouTube, Instagram, Facebook",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["downloader", "youtube", "instagram", "facebook"],
+  "author": "Shridhar",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1",
-    "fb-video-downloader": "^1.0.3",
-    "ytdl-core": "^4.11.5"
+    "express": "^4.18.2"
   }
 }
