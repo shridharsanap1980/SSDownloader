@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About SSDownloader</title>
+<link rel="icon" type="image/png" href="logo.png">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(120deg,#1877f2,#4facfe);
+    color:white;
+    text-align:center;
+}
+header{
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
+}
+.container{
+    margin-top:80px;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.6;
+}
+button{
+    padding:10px 20px;
+    margin-top:20px;
+    border:none;
+    border-radius:5px;
+    background:#ffcc00;
+    cursor:pointer;
+    font-size:16px;
+}
+button:hover{
+    background:#ffb700;
+}
+</style>
+</head>
+<body>
+
+<header>About SSDownloader</header>
+
+<div class="container">
+    <h2>What is SSDownloader?</h2>
+    <p>
+SSDownloader is a free online tool to download videos from Facebook, Instagram, YouTube in high quality: Full HD, 1080p, 2K, 4K.
+You can also convert videos to MP3 and download music. No registration or software installation is required. 
+Download Facebook,Instagram,youtube video, Reels, private video with SSDownloader
+Download videos from Facebook,Instagram, youtube to store on the device is a very necessary need of users. However, not all videos Facebook,Instagram, youtube allows download and does not allow download videos in HD quality. In this article I will show you how to download any video from all 3 platform with SSDownloader.
+SSDownloader is a Facebook,Instagram, youtube downloader, allow to download videos from both with the best quality: Full HD, 1080p, 2k, 4k. Support download Reels video on both 3 platform, download Fb,insta,youtube private video, convert video to mp3. This tool is easy to use and completely free.
+This tool supports many languages, works well on all browsers and devices such as: Chrome, Firefox, Opera, Edge, PC, tablet, iPhone, Android without software installation.
+The best online Facebook,Instagram,youtube downloader
+According to user reviews, SSDownloader.website is the best all three social platform video download site. This tool allows download videos from Facebook,Instagram,youtube in HD quality, easy to use and constantly updated.
+How to download Facebook,Instagram,youtube video with SSDownloader
+•	Step 1: Open the Facebook app on your phone or visit the website Facebook.com instgram and youtube
+•	Step 2: Find the video you want to download and click the Share button below the video and continue to press the Copy link option.
+•	Step 3: Go to the website SSDownloader, paste the link you just copied into input box and press the Download button.
+•	Step 4: Select MP4 or MP3 format, keep pressing the Download or Render button and wait a few seconds for the file to load about your device.
+With SSDownloader, you can easily download any video to your device quickly. We will continuously upgrade to bring you the best experience! Please share this tool with friends and family. Thank you for using our service!
+During use, if you encounter an error, please contact us for support: shridharsanap2017@gmail.com
+
+
+    </p>
+
+    <button onclick="goBack()">⬅️ Back</button>
+</div>
+
+<script>
+function goBack(){
+    window.history.back();
+}
+</script>
+
+</body>
+</html>

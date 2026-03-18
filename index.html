@@ -1,3 +1,4 @@
+<!-- local + remote content combined -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -281,4 +282,289 @@ function openContact() {
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SSDownloader</title>
+<link rel="icon" type="image/png" href="logo.png">
+
+<style>
+/* ===================== BASIC RESET ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================== BODY ===================== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,#1877f2,#4facfe);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ===================== CONTAINER ===================== */
+.container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+input {
+  width: 80%;
+  max-width: 500px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  background: #ffcc00;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: #ffb700;
+  transform: scale(1.05);
+}
+
+/* ===================== LOADER ===================== */
+#loader {
+  display: none;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+/* ===================== INFO SECTION ===================== */
+.info-section {
+  margin-top: 60px;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.main-desc {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===================== FEATURE BOXES ===================== */
+.new-features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255,255,255,0.25);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* ===================== OLD FEATURES ===================== */
+.features {
+  margin-top: 60px;
+}
+
+.features div {
+  margin: 15px;
+  font-size: 18px;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+}
+
+/* ===================== FOOTER BUTTONS ===================== */
+footer .footer-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer .footer-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .footer-buttons button:hover {
+    background: #6a6cf1;
+    color: #fff;
+}
+/* ===================== LOGO ===================== */
+.logo {
+  width: 300px;        /* size control */
+  height: 20ex;
+  display: block;
+  margin: 5px auto;   /* center me laane ke liye */
+}
+/* ===================== RESPONSIVE MEDIA QUERIES ===================== */
+@media (max-width: 768px) {
+  .container input {
+    width: 100%;
+  }
+   .feature-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .new-features {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  footer .footer-buttons {
+    flex-direction: column;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>SSDownloader</header>
+<img src="logo.png" class="logo">
+<div class="container">
+  <h1>Free Video Downloader</h1>
+  <p>Download videos from Facebook, YouTube and Instagram</p>
+
+  <input type="text" id="videoURL" placeholder="Paste video link here">
+
+  <div>
+    <button onclick="downloadVideo()">Download</button>
+    <button onclick="downloadMP3()">MP3</button>
+  </div>
+
+  <p id="loader">⏳ Downloading... Please wait</p>
+</div>
+
+<section class="info-section">
+  <h2><b>SSDownloader</b></h2>
+  <p class="main-desc">
+    SSDownloader is a Facebook, Instagram, YouTube video downloader that supports downloading videos in high quality: Full HD, 1080p, 2K, 4K. You can also convert videos to MP3 and download music. No registration or software installation required.
+  </p>
+
+  <div class="new-features">
+    <div class="feature-box">
+      <div class="icon">⏱️</div>
+      <p>Download any video quickly in a few simple steps.</p>
+    </div>
+    <div class="feature-box">
+      <div class="icon">📱</div>
+      <p>Supports HD, Full HD, 2K, 4K video and MP3 downloads.</p>
+    </div>
+    <div class="feature-box">
+      <div class="icon">💲</div>
+      <p>100% free. No signup. Works directly in your browser.</p>
+    </div>
+  </div>
+</section>
+
+<div class="features">
+  <div>⚡ Fast Download</div>
+  <div>🎬 HD Video Support</div>
+  <div>💯 Free & Unlimited</div>
+</div>
+<footer>
+    © 2026 SSDownloader
+    <br><br>
+    <div class="footer-buttons">
+        <button onclick="openAbout()">About</button>
+        <button onclick="openTerms()">Terms of Service</button>
+        <button onclick="openPrivacy()">Privacy Policy</button>
+        <button onclick="openContact()">Contact</button>
+    </div>
+</footer>
+
+<script>
+// ===================== VIDEO DOWNLOAD =====================
+function downloadVideo() {
+    const url = document.getElementById("videoURL").value;
+    if (!url) { alert("Please paste video link"); return; }
+    document.getElementById("loader").style.display = "block";
+    const downloadLink = "/download?video=" + encodeURIComponent(url);
+    window.location.href = downloadLink;
+}
+
+// ===================== MP3 DOWNLOAD =====================
+function downloadMP3() {
+    const url = document.getElementById("videoURL").value;
+    if (!url) { alert("Please paste video link"); return; }
+    document.getElementById("loader").style.display = "block";
+    const downloadLink = "/mp3?video=" + encodeURIComponent(url);
+    window.location.href = downloadLink;
+}
+
+// ===================== FOOTER BUTTON FUNCTIONS =====================
+function openAbout() {
+    alert("this site is for eduction purpose SSDownloader is a free video downloader for Facebook, Instagram, YouTube. You can download videos and convert to MP3 quickly.");
+}
+
+function openTerms() {
+    alert("Terms of Service: Use responsibly. All content belongs to the respective owners.");
+}
+
+function openPrivacy() {
+    alert("Privacy Policy: We do not store personal data. Downloads are direct from social media.");
+}
+
+function openContact() {
+    alert("Contact us at: shridharsanap2017@gmail.com");
+}
+</script>
+
+</body>
+>>>>>>> 6667ca4 (Initial commit)
 </html>
